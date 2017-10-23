@@ -1,0 +1,9 @@
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-05-22', 0, 3, 1, 2, 7);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-05-24', 0, 1, 1, 6, 6);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-05-26', 2, 1, 1, 1, 4);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-06-6', 0, 5, 3, 2, 7);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-06-8', 1, 2, 3, 5, 1);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-06-10', 1, 2, 3, 1, 4);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-06-5', 1, 6, 4, 9, 10);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-06-9', 0, 4, 4, 2, 7);
+INSERT INTO timetabledb.exam (date, lessonTime, classrooms_id, groups_id, subjects_id, teachers_id) VALUES ('2017-06-15', 3, 2, 4, 2, 8);

@@ -1,0 +1,10 @@
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Taras', 'Ivanytskyi', 1);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Serjiy', 'Pankiv', 0);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Vasyl', 'Kostiv', 0);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Pavlo', 'Vyshynskyi', 3);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Oleksandr', 'Bomchyk', 1);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Oleh', 'Antonenko', 2);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Bohdan', 'Benovskyi', 2);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Anton', 'Ilkiv', 0);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Iryna', 'Ludevych', 1);
+INSERT INTO timetabledb.teacher (hours, name, secondName, teacherTitle) VALUES (500, 'Alina', 'Operova', 1);

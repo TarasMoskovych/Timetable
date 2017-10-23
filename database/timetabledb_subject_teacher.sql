@@ -1,0 +1,13 @@
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (4, 1);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (7, 1);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (7, 2);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (9, 3);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (4, 4);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (1, 5);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (6, 6);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (8, 6);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (5, 7);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (2, 8);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (10, 9);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (3, 10);
+INSERT INTO timetabledb.subject_teacher (teacherId, subjectId) VALUES (6, 11);

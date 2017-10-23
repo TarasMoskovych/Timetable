@@ -1,0 +1,11 @@
+INSERT INTO timetabledb.subject (hours, name) VALUES (200, 'Linux Administration');
+INSERT INTO timetabledb.subject (hours, name) VALUES (160, 'Computers architecture');
+INSERT INTO timetabledb.subject (hours, name) VALUES (200, 'Microprocessors');
+INSERT INTO timetabledb.subject (hours, name) VALUES (200, 'Programming');
+INSERT INTO timetabledb.subject (hours, name) VALUES (160, 'Web Technologies');
+INSERT INTO timetabledb.subject (hours, name) VALUES (160, 'Software engineering');
+INSERT INTO timetabledb.subject (hours, name) VALUES (80, 'Operating systems');
+INSERT INTO timetabledb.subject (hours, name) VALUES (80, 'Digital signal processing');
+INSERT INTO timetabledb.subject (hours, name) VALUES (100, 'Linux Administration (lab)');
+INSERT INTO timetabledb.subject (hours, name) VALUES (100, 'Computers architecture (lab)');
+INSERT INTO timetabledb.subject (hours, name) VALUES (100, 'Microprocessors (lab)');
