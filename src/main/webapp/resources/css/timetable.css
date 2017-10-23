@@ -1,0 +1,136 @@
+.form-inline {
+    margin-top: 0.5%;
+    padding-bottom: 2%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.mform{
+    padding-bottom:15px;
+    width: 100%;
+}
+
+.mTable td{
+    padding: 3px;
+}
+
+.mTable th{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.special{
+    width: auto;
+    margin: 0 auto;
+}
+
+.tr-border{
+    border: solid 1px black;
+
+}
+
+.vertical{
+    height: 1px;
+    background-color: #DDDDDD;
+    margin: 10px 0;
+}
+
+.horizontal{
+    height: 1px;
+    background-color: #DDDDDD;
+    margin: 10px 0;
+}
+
+.align-center{
+    text-align: center;
+}
+.top{
+    margin-top: 60px;
+}
+
+.bottom{
+    margin-bottom: 60px;
+}
+
+.left{
+    margin-left: 60px;
+}
+
+.right{
+    margin-left: 60px;
+}
+
+.position{
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.position2, .positionZ{
+    margin-left: 5px;
+}
+
+.position3{
+    margin-left: 3px;
+}
+
+.positionZ{
+    margin-top: 3px;
+}
+
+.mTable{
+    font-size: 1.15em;
+}
+.mTable table{
+    font-size: 0.85em;
+}
+
+#myForm{
+    margin: 0;
+    position: relative;
+    top:-10px;
+    padding: 20px 0;
+}
+
+#myForm select{
+    margin-left: 20px;
+}
+
+.subBtn{
+    margin-top: 10px;
+}
+
+.padding{
+    padding-left: 5px;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.btn-padding{
+    padding: 0 20px;
+}
+
+.btn-padding2{
+    padding: 0 75px;
+}
+
+.label1 {
+    min-width: 220px !important;
+    display: inline-block !important
+}
+
+.label2{
+    margin-left: 25px;
+}
+
+.ff{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+

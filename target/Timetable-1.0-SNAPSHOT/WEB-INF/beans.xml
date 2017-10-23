@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:secutity="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <context:annotation-config />
+    <context:component-scan base-package="ua.moskovych.taras"/>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceXmlLocation" value="classpath:/META-INF/persistence.xml"/>
+        <property name="persistenceUnitName" value="Main"/>
+        <property name="jpaVendorAdapter" ref="vendorAdapter"/>
+    </bean>
+
+    <bean id="vendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <security:http>
+        <security:intercept-url pattern="/timetable/exam/**" access="permitAll()"/>
+        <security:intercept-url pattern="/timetable/group/**" access="permitAll()"/>
+        <security:intercept-url pattern="/timetable/teacher/**" access="permitAll()"/>
+        <security:intercept-url pattern="/timetable/**" access="hasRole('ROLE_ADMIN')"/>
+
+        <secutity:csrf disabled="true"/>
+        <secutity:form-login login-page="/login" login-processing-url="/login"/>
+        <secutity:logout/>
+    </security:http>
+
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:user-service>
+                <security:user name="admin" password="admin" authorities="ROLE_ADMIN"/>
+            </security:user-service>
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <ref bean="jackson2HttpMessageConverter"/>
+            <ref bean="stringHttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <context:component-scan base-package="ua.moskovych.taras.*"/>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="formatters">
+            <set>
+                <ref bean="teacherForm"/>
+                <ref bean="groupForm"/>
+                <ref bean="classroomForm"/>
+                <ref bean="subjectForm"/>
+            </set>
+        </property>
+    </bean>
+
+    <mvc:annotation-driven conversion-service="conversionService"/>
+
+    <bean id="jackson2HttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter"/>
+
+</beans>

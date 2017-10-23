@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="UMLDiagramComponent">
+    <diagram name="controllers">
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="ua.lviv.lgs.controllers.BaseController" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="ua.lviv.lgs.controllers.RestController" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="ua.lviv.lgs.controllers.LoginController" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="ua.lviv.lgs.controllers.SearchController" />
+      <command command-class="de.frag.umlplugin.uml.command.AddClassCommand" psi-class="ua.lviv.lgs.controllers.TimetableController" />
+      <command command-class="de.frag.umlplugin.uml.command.AddDependentClassesCommand" psi-class="ua.lviv.lgs.controllers.BaseController" />
+      <compartment-visibility />
+    </diagram>
+  </component>
+</project>
